@@ -13,4 +13,7 @@ This script will automaticly check your currency and region and get token price 
 * Make the script work inside pages(like legion page with basic and deluxe version)
 
 
+[Click here to install](https://github.com/victorscopel/wow-token-converter/raw/master/converter.user.js)
+
+
 If you want, feel free to help me, i'm not that good with javascript, so my code can look a bit messy
