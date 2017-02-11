@@ -12,7 +12,7 @@ This script will automaticly check your currency and region and get token price 
 * Make the script work with all currencies and regions
 * Make the script work inside pages(like legion page with basic and deluxe version)
 
-
+You will need tampermonkey(chrome) to install, didn't try to install with the greasemonkey(firefox)
 [Click here to install](https://github.com/victorscopel/wow-token-converter/raw/master/converter.user.js)
 
 
