@@ -5,7 +5,6 @@
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.battle.net/shop/*
- //@require  http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
 // @updateURL https://raw.githubusercontent.com/victorscopel/wow-token-converter/master/converter.user.js
 // @downloadURL https://raw.githubusercontent.com/victorscopel/wow-token-converter/master/converter.user.js
 // @grant GM_xmlhttpRequest
