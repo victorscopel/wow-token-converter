@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name         WoW Token Converter
 // @namespace    https://github.com/victorscopel/wow-token-converter
+// @homepage https://github.com/victorscopel/wow-token-converter
+// @supportURL https://github.com/victorscopel/wow-token-converter/issues
 // @version      1.1
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
