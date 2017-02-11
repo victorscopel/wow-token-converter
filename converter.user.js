@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WoW Token Converter
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.battle.net/shop/*
