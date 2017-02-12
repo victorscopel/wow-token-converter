@@ -6,7 +6,7 @@ This script will automaticly check your currency and region and get token price 
 * BRL
 * USD
 * AUD
-* GPB
+* GBP
 
 ##To Do List
 * Make the script work with all currencies and regions
