@@ -38,13 +38,13 @@
                 if (currency == "GBP")
                     tokenprice = 10;
             } else if (region == "kr") {
-                console.log("This region isn't suported yet");
+                console.log("This region isn't supported yet");
 
             } else if (region == "tw") {
                 console.log("This region isn't suported yet");
 
             } else if (region == "cn") {
-                console.log("This region isn't suported yet");
+                console.log("This region isn't supported yet");
             }
 
 
