@@ -9,6 +9,7 @@
 // @match        https://*.battle.net/shop/*
 // @updateURL https://raw.githubusercontent.com/victorscopel/wow-token-converter/master/converter.user.js
 // @downloadURL https://raw.githubusercontent.com/victorscopel/wow-token-converter/master/converter.user.js
+// @require http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 // @grant GM_xmlhttpRequest
 // @grant GM_setValue
 // @grant GM_getValue
