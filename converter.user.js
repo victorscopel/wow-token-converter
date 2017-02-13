@@ -3,7 +3,7 @@
 // @namespace    https://github.com/victorscopel/wow-token-converter
 // @homepage https://github.com/victorscopel/wow-token-converter
 // @supportURL https://github.com/victorscopel/wow-token-converter/issues
-// @version      1.2.1
+// @version      1.3
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.battle.net/shop/*
@@ -23,34 +23,14 @@
         url:        'https://wowtoken.info/snapshot.json',
         dataType:   'JSON',
         success:    function (apiJson) {
-            var currency = Msg.userCurrency;
-            var region = Core.region;
-            var tokenprice = 15; //The default value for the token is for dolar
-            if (region == "us") {
-                var resultObj = apiJson.NA.raw;
-                if (currency == "BRL")
-                    tokenprice = 24;
-                if (currency == "AUD")
-                    tokenprice = 17;
-            } else if (region == "eu") {
-                var resultObj = apiJson.EU.raw;
-                if (currency == "EUR")
-                    tokenprice = 13;
-                if (currency == "GBP")
-                    tokenprice = 10;
-            } else if (region == "kr") {
-                console.log("This region isn't supported yet");
+            //Currencies
+            var currencies = {BRL: 24, USD: 15, AUD: 17, EUR: 13, GBP: 10};
 
-            } else if (region == "tw") {
-                console.log("This region isn't suported yet");
+            var region = Core.region.toUpperCase().replace('US','NA');
+            var tokenprice = currencies[Msg.userCurrency];
+            var tokengold = eval("apiJson."+region+".raw.buy");
 
-            } else if (region == "cn") {
-                console.log("This region isn't supported yet");
-            }
-
-
-            var tokengold = resultObj.buy;
-            $(".product-card-container li").each(function( index ) {
+            $('.product-card-container li').each(function( index ) {
                 var productprice = $(this).find(".product-price").html().replace(',','.').replace(/[^\d.-]/g, '');
                 var goldfinal = Math.ceil((productprice/tokenprice))*tokengold;
                 if (goldfinal){
