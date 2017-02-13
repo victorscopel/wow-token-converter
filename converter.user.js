@@ -33,7 +33,7 @@
                 if (currency == "AUD")
                     tokenprice = 17;
             } else if (region == "eu") {
-                var resultObj = apiJson.NA.raw;
+                var resultObj = apiJson.EU.raw;
                 if (currency == "EUR")
                     tokenprice = 13;
                 if (currency == "GBP")
