@@ -3,7 +3,7 @@
 // @namespace    https://github.com/victorscopel/wow-token-converter
 // @homepage https://github.com/victorscopel/wow-token-converter
 // @supportURL https://github.com/victorscopel/wow-token-converter/issues
-// @version      1.3
+// @version      1.3.1
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.battle.net/shop/*
@@ -30,8 +30,9 @@
             var tokenprice = currencies[Msg.userCurrency];
             var tokengold = eval("apiJson."+region+".raw.buy");
 
+
             $('.product-card-container li').each(function( index ) {
-                var productprice = $(this).find(".product-price").html().replace(',','.').replace(/[^\d.-]/g, '');
+                var productprice = $(this).find(".product-price").clone().children().remove().end().text().replace(',','.').replace(/[^\d.-]/g, '');
                 var goldfinal = Math.ceil((productprice/tokenprice))*tokengold;
                 if (goldfinal){
                     $(this).find(".product-card-info").append('<p style="color:#FFD700;position:absolute;font-size: 13px;top:-1px;left:15px;">Gold: '+goldfinal.toLocaleString("us")+'</p>');
