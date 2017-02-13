@@ -13,7 +13,7 @@ This script will automaticly check your currency and region and get token price 
 * Make the script work inside pages(like legion page with basic and deluxe version)
 
 ##Changelog
-**13/02/2017** - Fixed a bug with EU currencies  
+**13/02/2017** - Remade all the code again, it's now easier to add other currencies
 **12/02/2017** - Remade the code and added support to AUD and GPB currencies
 
 ##How to Install
