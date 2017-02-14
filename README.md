@@ -13,7 +13,7 @@ This script will automaticly check your currency and region and get token price 
 * Make the script work inside pages(like legion page with basic and deluxe version)
 
 ##Changelog
-**14/02/2017** - Added support to every page in the shop  
+**14/02/2017** - Added support to every page in the shop including hearthstone packs and overwatch loot boxes  
 **13/02/2017** - Remade all the code again, fixed a bug with discounted products  
 **12/02/2017** - Remade the code and added support to AUD and GPB currencies
 
