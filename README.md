@@ -18,7 +18,7 @@ This script will automaticly check your currency and region and get token price 
 **12/02/2017** - Remade the code and added support to AUD and GPB currencies
 
 ##How to Install
-You will need tampermonkey(chrome) or greasemonkey(firefox)
+You will need tampermonkey(chrome), Firefox isn't working, i will see what i can do to fix this
 
 [Click here to install](https://github.com/victorscopel/wow-token-converter/raw/master/converter.user.js)
 
