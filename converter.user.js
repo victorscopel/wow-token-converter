@@ -25,8 +25,7 @@
         success:    function (apiJson) {
             //Currencies
             var currencies = {BRL: 24, USD: 15, AUD: 17, EUR: 13, GBP: 10};
-            //var balanceamount = $(".balance-amount").clone().children().remove().end().text().replace(',','.').replace(/[^\d.-]/g, '');
-            var balanceamount = 30;
+            var balanceamount = $(".balance-amount").clone().children().remove().end().text().replace(',','.').replace(/[^\d.-]/g, '');            
             var region = Core.region.toUpperCase().replace('US','NA');
             var tokenprice = currencies[Msg.userCurrency];
             var tokengold = eval("apiJson."+region+".raw.buy");
