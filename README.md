@@ -2,6 +2,9 @@
 
 This script will automaticly check your currency and region and get token price from WoWtoken.info and write in the store page the gold and tokens needed to buy each product from blizzard
 
+##Example
+![Preview](http://i.imgur.com/9Ap42Bg.png)
+
 ##Working currencies and regions
 * BRL
 * USD
@@ -13,7 +16,7 @@ This script will automaticly check your currency and region and get token price 
 * Make the script work with all currencies and regions
 
 ##Changelog
-**23/02/2017** - The script now gets your balance amount and discount in the product price
+**23/02/2017** - The script now gets your balance amount and discount in the product price  
 **14/02/2017** - Added support to every page in the shop including hearthstone packs and overwatch loot boxes  
 **13/02/2017** - Remade all the code again, fixed a bug with discounted products  
 **12/02/2017** - Remade the code and added support to AUD and GPB currencies
