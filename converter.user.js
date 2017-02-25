@@ -34,7 +34,6 @@
                 var productprice = $(this).find(".product-price").clone().children().remove().end().text().replace(',','.').replace(/[^\d.-]/g, '');
                 var goldvalue = (productprice-balanceamount)/tokenprice*tokengold;
                 var goldfinal = Math.ceil(((productprice-balanceamount)/tokenprice))*tokengold;
-                //alert(goldvalue);
                 if (goldfinal > 0){
                    $(this).find(".thumbnail").append('<p style="color: #fff;position: absolute;font-size: 13px;top: 0;margin: 0;padding: 5px;line-height: 15px;background-color: #24364C;left: 1px;z-index: 100;">Gold: '+goldfinal.toLocaleString("us")+'</p>');
                    $(this).find(".thumbnail").append('<p style="color: #fff;position: absolute;font-size: 13px;top: 0;margin: 0;padding: 5px;line-height: 15px;background-color: #24364C;right: 1px;z-index: 100;">Tokens: '+(goldvalue/tokengold).toFixed(1)+'</p>');
