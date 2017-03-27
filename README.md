@@ -6,7 +6,7 @@ The script also checks your balance and if you have money in it it decreases the
 ## Example
 ![Preview](http://i.imgur.com/9Ap42Bg.png)
 
-##Working currencies and regions
+## Working currencies and regions
 * BRL
 * USD
 * AUD
