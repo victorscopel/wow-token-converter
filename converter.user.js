@@ -3,7 +3,7 @@
 // @namespace    https://github.com/victorscopel/wow-token-converter
 // @homepage https://github.com/victorscopel/wow-token-converter
 // @supportURL https://github.com/victorscopel/wow-token-converter/issues
-// @version      1.6.1
+// @version      1.6.2
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.battle.net/shop/*
@@ -20,7 +20,7 @@
     'use strict';
     $.ajax ( {
         type:       'GET',
-        url:        'https://wowtoken.info/snapshot.json',
+        url:        'https://data.wowtoken.info/snapshot.json',
         dataType:   'JSON',
         success:    function (apiJson) {
             //Currencies
