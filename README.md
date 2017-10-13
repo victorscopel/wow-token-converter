@@ -17,6 +17,7 @@ The script also checks your balance and if you have money in it it decreases the
 * Make the script work with all currencies and regions
 
 ## Changelog
+**13/10/2017** - Updated the wowtoken.info snapshot URL  
 **25/02/2017** - The token now shows in decimal, changed the visual for better looking, fixed a few bugs  
 **23/02/2017** - The script now gets your balance amount and discount in the product price  
 **14/02/2017** - Added support to every page in the shop including hearthstone packs and overwatch loot boxes  
