@@ -1744,5 +1744,3 @@ var Coinify = function Coinify() {
     }
   };
 };
-
-exports.default = Coinify;
