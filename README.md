@@ -1,4 +1,4 @@
-The current version doesn't work with the new battle.net store, i'm still upgrading the code for the new store but the new structure sucks, so it will take a while  
+**The current version doesn't work with the new battle.net store, i'm still upgrading the code for the new store but the new structure sucks, so it will take a while**  
 
 # Wow Token Converter
 
