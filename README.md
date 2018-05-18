@@ -6,7 +6,7 @@ This script will automaticly check your currency and region and get token price 
 The script also checks your balance and if you have money in it it decreases the value of the product according to the amount of money you have, so you do not need to buy extra tokens
 
 ## Example
-![Preview](http://i.imgur.com/9Ap42Bg.png)
+![Preview](https://i.imgur.com/XgnIs9o.jpg)
 
 ## Working currencies and regions
 * BRL
