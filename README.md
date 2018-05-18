@@ -1,4 +1,4 @@
-**The current version doesn't work with the new battle.net store, i'm still upgrading the code for the new store but the new structure sucks, so it will take a while**  
+**The current version is working only with the front page of the store, still trying to figure out how to make it work with the rest of the site**  
 
 # Wow Token Converter
 
@@ -14,11 +14,8 @@ The script also checks your balance and if you have money in it it decreases the
 * AUD
 * EUR
 * GBP
-
-## To Do List
-* Make the script work with all currencies and regions
-
 ## Changelog
+**18/05/2018** - Made it work again, but only with the frontpage, still trying to fix the rest  
 **13/10/2017** - Updated the wowtoken.info snapshot URL  
 **25/02/2017** - The token now shows in decimal, changed the visual for better looking, fixed a few bugs  
 **23/02/2017** - The script now gets your balance amount and discount in the product price  
