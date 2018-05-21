@@ -3,7 +3,7 @@
 // @namespace    https://github.com/victorscopel/wow-token-converter
 // @homepage https://github.com/victorscopel/wow-token-converter
 // @supportURL https://github.com/victorscopel/wow-token-converter/issues
-// @version      1.6.3
+// @version      1.6.4
 // @description  Returns the price and quantity in tokens for every product
 // @author       Victor Scopel
 // @match        https://*.shop.battle.net/*
@@ -53,7 +53,7 @@ function waitForAddedNode(params) {
         recursive: false,
         done: function(el) {
             setTimeout( function() {
-            var currencysymbol = $(el).find('span.price span.full').html().replace(/\d+/g,'').replace(',','').replace(" ","").replace(".","");
+            var currencysymbol = $(el).find('span.price span.full').html().replace(/\d+/g,'').replace(',','').replace(" ","").replace(".","").replace("&nbsp;","");
             $.ajax ( {
                 type:       'GET',
                 url:        'https://data.wowtoken.info/snapshot.json',
@@ -61,7 +61,7 @@ function waitForAddedNode(params) {
                 success:    function (apiJson) {
                     //Currencies
                     var currencies = {'R$': 24, 'BRL': 24, '$': 15, 'USD': 15, 'AU$': 17, 'A$': 17, 'AUD': 17, '€': 13, 'EUR': 13, '£': 10, 'GBP': 10, 'ARS': 135.00};
-                    var balanceamount = $(".balance-menu .balance-link").clone().children().remove().end().text().replace(',','.').replace(/[^\d.-]/g, '');
+                    var balanceamount = $(".balance-amount").first().clone().children().remove().end().text().replace("&nbsp;","").replace(',','.').replace(/[^\d.-]/g, '');
                     var region = $(".Navbar").data("region").toUpperCase().replace('US','NA');
                     var tokenprice = currencies[currencysymbol];
                     var tokengold = eval("apiJson."+region+".raw.buy");
